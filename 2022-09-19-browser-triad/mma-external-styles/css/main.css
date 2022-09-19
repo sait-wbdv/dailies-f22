@@ -1,0 +1,22 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+
+  background-color: firebrick;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+.intro {
+  padding-left: 25px;
+}
+
+strong {
+  background: goldenrod;
+}
