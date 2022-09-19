@@ -4,13 +4,15 @@ body {
 }
 
 h1 {
+  /* Typography */
   font-family: "Times New Roman", serif;
   font-style: italic;
+  text-align: center;
 
+  /* Colors and box model */
   background-color: firebrick;
   color: white;
   padding: 25px;
-  text-align: center;
 }
 
 .intro {
