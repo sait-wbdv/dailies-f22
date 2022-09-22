@@ -1,0 +1,48 @@
+/* Body text */
+body {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 1.7;
+
+  background-color: #CEC6BD;
+}
+
+/* Call-to-action container */
+.cta {
+  max-width: 40ch;
+  margin: 10em auto;
+  padding: 2em;
+  border-radius: 1rem;
+
+  background-color: #CD6859;
+  color: white;
+}
+
+/* Call to Action "button" */
+.cta a {
+  display: block;
+
+  font-family: 'Carter One', "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  text-decoration: none;
+  text-align: center;
+
+  color: #5B443E;
+  background-color: hsl(38, 90%, 75%);
+
+  padding: 1em;
+  margin: 1em;
+  margin-top: 2em;
+  border-radius: 0.5rem;
+}
+
+/* Hover state */
+.cta a:hover {
+  background-color: #5B443E;
+  color: #aaa;
+}
+
+/* Click state */
+.cta a:active {
+  background-color: #CEC6BD;
+  color: #333;
+}
