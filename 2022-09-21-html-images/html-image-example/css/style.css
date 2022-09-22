@@ -1,0 +1,21 @@
+body {
+  /*  Often needed to remove scroll bars (but not today).  */
+    margin: 0;
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+    border: 1px solid black;
+    margin: 1em 0;
+    
+  /* Fix aspect-ratio */
+    height: initial;
+  /*   object-fit: cover; */
+    
+  }
+  
+  section {
+    max-width: 65ch;
+    margin: auto;
+  }
