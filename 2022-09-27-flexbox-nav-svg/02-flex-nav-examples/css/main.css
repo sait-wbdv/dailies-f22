@@ -1,0 +1,74 @@
+/* Reset default list styles: remove bullets and left indent. */
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+
+/* Reset default link styles: remove underline, and change color. */
+nav a {
+  text-decoration: none;
+  color: indigo;
+  
+  /* Add border to links (optional) */
+  border: 1px solid grey;
+  
+  /* Increase the clickable area of the links using padding. */
+  padding: 1rem 0.5rem;
+  display: block;
+  text-align: center;
+}
+
+
+/* Display links horizontally using flexbox */
+
+nav ul {
+  display: flex;
+}
+
+/* Center the links in the middle of the page (horizontally). */
+
+.centre ul {
+  justify-content: center;
+}
+
+/* Space the evenly between the links. */
+.space-between ul {
+  justify-content: space-between;
+}
+
+/* Distribute extra space evenly on the left and right sides of each link. */
+.space-around ul {
+  justify-content: space-around;
+}
+
+/* Distribute extra space evenly on the left and right sides of each link, including the ends of the menu. */
+.space-evenly ul {
+  justify-content: space-evenly;
+}
+
+
+/* Expand the links to fill up extra space. */
+.grow li {
+  flex: auto;
+}
+
+/* Resets and Side Code */
+
+body {
+  margin: 0;
+
+  font-size: 24px;
+  font-variant: small-caps;
+  font-family: Trebuchet MS, Helvetica, sans-serif;
+  letter-spacing: 0.2em;
+}
+
+nav {
+  margin-bottom: 2rem;
+}
+
+nav ul {
+  margin: 0;
+}
+    
