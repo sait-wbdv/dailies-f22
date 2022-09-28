@@ -1,0 +1,50 @@
+
+/* Resets and Side Code */
+
+body {
+/*   margin: 0; */
+
+  font-size: 24px;
+  font-variant: small-caps;
+  font-family: Trebuchet MS, Helvetica, sans-serif;
+  letter-spacing: 0.2em;
+}
+
+nav {
+  margin-bottom: 2rem;
+}
+
+nav ul {
+  margin: 0;
+}
+
+/* Reset default list styles: remove bullets and left indent. */
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+
+/* Reset default link styles: remove underline, and change color. */
+nav a {
+  text-decoration: none;
+  color: indigo;
+  
+  /* Add border to links (optional) */
+  border: 1px solid grey;
+  
+  /* Increase the clickable area of the links using padding. */
+  padding: 1rem 0.5rem;
+  display: block;
+  text-align: center;
+}
+
+@media screen and (min-width: 40em) {
+  nav ul {
+    display: flex;
+  }
+
+  nav ul > * {
+    flex: auto;
+  }
+}
