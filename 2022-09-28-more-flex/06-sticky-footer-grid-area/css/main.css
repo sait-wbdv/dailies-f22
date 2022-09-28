@@ -1,0 +1,53 @@
+body {
+  display: grid;
+  gap: 1em;
+  grid-template-rows: auto auto auto 1fr auto;
+  min-height: 100vh;
+}
+
+/* Make it "pretty" */
+
+body {
+  font-size: 22px;
+  margin: 0;
+  /* Big ugly border */
+  background-color: red;
+}
+nav, header, aside, main, footer {
+  border: 1px solid rebeccapurple;
+  padding: 1rem;
+  background-color: white;
+}
+
+nav, header, aside, footer {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 75em) {
+  body {
+    grid-template-columns: 12em 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+      'header    header'
+      'primary   primary'
+      'secondary main'
+      'secondary footer';
+  }
+
+  nav {
+    grid-area: primary;
+  }
+  header {
+    grid-area: header;
+  }
+  aside {
+    grid-area: secondary;
+  }
+  main {
+    grid-area: main
+  }
+  footer {
+    grid-area: footer;
+  }
+
+}
