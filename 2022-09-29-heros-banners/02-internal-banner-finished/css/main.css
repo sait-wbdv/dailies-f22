@@ -1,0 +1,32 @@
+body {
+  font-size: 24px;
+}
+
+/* Banner */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-title {
+  font-size: 30px;
+}
+
+nav ul {
+  display: flex;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+a, a:visited {
+  display: block;
+  padding: 0.5em 1em;
+  
+  text-decoration: none;
+  
+  color: brown;
+  border: 1px solid maroon;
+}
