@@ -1,0 +1,18 @@
+body {
+  font-size: 128px;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+
+  background-image: linear-gradient(#2193b0, #6dd5ed);
+} 
+
+p {
+  font-family: 'Nabla', Arial, Helvetica, cursive;
+}

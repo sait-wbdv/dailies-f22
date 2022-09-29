@@ -1,0 +1,26 @@
+body {
+  font-size: 128px;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  height: 100vh;
+
+  background: url('https://picsum.photos/id/10/2000/2000'),
+  linear-gradient(#2193b0, #6dd5ed);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-blend-mode: hard-light;
+  /* background-image: ; */
+} 
+
+p {
+  font-family: 'Nabla', Arial, Helvetica, cursive;
+  margin-top: 10vh;
+  font-size: clamp(64px, 10vw, 128px);
+}
