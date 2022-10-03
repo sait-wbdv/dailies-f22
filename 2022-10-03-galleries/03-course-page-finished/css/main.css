@@ -1,0 +1,29 @@
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.course-list > * {
+  /* Will grow to full the row, even if it's really wide. */
+  flex: 30ch;
+
+  /* Will NOT grow but will preserve the width of the card. */
+  flex: 0 30ch;
+}
+
+
+/* Make it "Pretty" */
+
+.course-list a {
+  display: block;
+
+  /* Use this with `flex: 30ch;` to (maybe) get the best of both worlds. */
+  /* max-width: 40ch; */
+  
+  padding: 1rem;
+
+  border: 1px solid black;
+  border-radius: 1rem;
+}
