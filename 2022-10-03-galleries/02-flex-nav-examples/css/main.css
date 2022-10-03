@@ -1,0 +1,98 @@
+/* Reset default list styles: remove bullets and left indent. */
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+
+/* Reset default link styles: remove underline, and change color. */
+nav a {
+  text-decoration: none;
+  color: indigo;
+  
+  /* Add border to links (optional) */
+  border: 1px solid grey;
+  
+  /* Increase the clickable area of the links using padding. */
+  padding: 1rem 0.5rem;
+  display: block;
+  text-align: center;
+}
+
+
+/* Display links horizontally using flexbox */
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Link expand to fill extra space. */
+
+.grow ul > * {
+  flex: auto;
+}
+
+/* Only Fighter will grow to fill extra space. */
+
+.grow-fighter ul > .fighter {
+  flex: auto;
+}
+
+/* Two items will grow equally. */
+
+.grow-two-even ul > .fighter, .grow-two-even ul > .bard {
+  flex: auto;
+}
+
+/* Two items will grow unequally. */
+
+.grow-two-uneven ul > .fighter {
+  flex: 1;
+}
+
+.grow-two-uneven ul > .bard {
+  flex: 5;
+}
+
+/* Items will take the length declared with flex and grow. */
+
+.basis ul > .fighter {
+  flex: 25ch;
+}
+
+.basis ul > .bard {
+  flex: 50ch;
+}
+
+
+/* Items will take the length declared with flex but not grow. */
+
+.basis-grow ul > .fighter {
+  flex: 0 25ch;
+}
+
+.basis-grow ul > .bard {
+  flex: 0 50ch;
+}
+
+
+/* Resets and Side Code */
+
+body {
+  margin: 0;
+
+  font-size: 24px;
+  font-variant: small-caps;
+  font-family: Trebuchet MS, Helvetica, sans-serif;
+  letter-spacing: 0.2em;
+}
+
+nav {
+  margin-bottom: 2rem;
+}
+
+nav ul {
+  margin: 0;
+}
+    
