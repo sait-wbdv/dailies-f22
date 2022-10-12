@@ -1,0 +1,123 @@
+body {
+  /* Settings for sticky footer, see <main> flex setting */
+  display: flex;
+  flex-direction: column;
+  /* Pull page height to the full screen */
+  min-height: 100vh;
+  /* Remove scroll bar */
+  margin: 0;
+
+  /* body text font styles with system and generic fallbacks*/
+  font-family: 'Open Sans', Lucida Sans Unicode, Lucida Grande sans-serif;
+  font-size: 24px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bebas Neue', Impact, Charcoal, cursive;
+}
+
+/* Banner */
+
+header {
+  /* Mobile settings; nested flexbox for banner */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  box-shadow: 
+    0 1px 1px #0000000d,
+    0 2px 2px #0000000d,
+    0 4px 4px #0000000d,
+    0 8px 8px #0000000d;
+}
+
+/* Styling banner image */
+.site-title {
+  padding: 0;
+  border: none;
+}
+
+.site-title img {
+  width: 5ch;
+}
+
+/* Full width nav bar on mobile */
+nav {
+  width: 100%;
+}
+
+/* Vertical nav on mobile */
+nav ul {
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 0;
+
+  list-style: none;
+}
+
+/* Obviously clickable links */
+nav a, nav a:visited {
+  display: block;
+  padding: 0.5em 1em;
+  text-align: center;
+  
+  text-decoration: none;
+  
+  color: brown;
+}
+
+nav a:hover {
+  color: white;
+  background-color: brown;
+}
+
+main {
+  /* To centre content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+
+  /* Item will grow into extra space to make footer sticky */
+  flex: auto;
+}
+
+/* Centered footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+
+  background-color: papayawhip;
+  box-shadow: 
+    0 -1px 1px #0000000d,
+    0 -2px 2px #0000000d,
+    0 -4px 4px #0000000d,
+    0 -8px 8px #0000000d;
+}
+
+/* Desktop settings */
+@media screen and (min-width: 40em) {
+  /* Horizontal banner on desktop */
+  nav ul, header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    justify-content: flex-end;
+  }
+
+  /* Hero image only on Desktop when there's enough empty space */
+  main {
+    justify-content: flex-start;
+
+    color: white;
+    background-image: linear-gradient(rgb(0,0,0, .5), transparent),
+      url(https://picsum.photos/id/1006/2000/2000);
+    background-size: cover;
+    background-position: center;
+  }
+}
