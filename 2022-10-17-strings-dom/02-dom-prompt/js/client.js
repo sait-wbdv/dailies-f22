@@ -1,13 +1,15 @@
 const paragraph = document.querySelector('.cats');
+const paragraphContent = paragraph.innerHTML;
+
+const searchTerm = prompt('Is this word in this paragraph? Pick a word to search for!');
 const answer = document.querySelector('.answer');
 
-const searchTerm = prompt('Is this word in this parapragh? Pick a word.');
 
 /*************/
 /* Example 1 */
 /*************/
 
-// const result = paragraph.innerHTML.includes(searchTerm);
+// const result = paragraphContent.includes(searchTerm);
 // if (result === true) {
 //   answer.innerHTML = "Yes! Your word is in the paragraph!"
 // } else {
@@ -17,7 +19,7 @@ const searchTerm = prompt('Is this word in this parapragh? Pick a word.');
 /*************/
 /* Example 2 */
 /*************/
-const result = paragraph.innerHTML.search(searchTerm);
+const result = paragraphContent.search(searchTerm);
 answer.innerHTML = `The first occurrence of ${searchTerm} is at character ${result}!`
 
-paragraph.innerHTML = paragraph.innerHTML.replace(searchTerm, `<strong>${searchTerm}</strong>`);
+paragraph.innerHTML = paragraphContent.replace(searchTerm, `<strong>${searchTerm}</strong>`);
