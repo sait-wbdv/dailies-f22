@@ -1,0 +1,58 @@
+:root {
+  --hue: 0;
+  --hue2: calc(var(--hue) + 60);
+
+  --dark: hsl(var(--hue), 59%, 26%);
+  --light: hsl(var(--hue2), 60%, 92%);
+}
+
+body {
+  margin: 0;
+
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body.light {
+  color: var(--dark);
+  background-color: var(--light);
+}
+
+body.dark {
+  color: var(--light);
+  background-color: var(--dark);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin: auto;
+  max-width: 50ch;
+  min-height: 100vh;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+label[for=dark-mode] {
+  display: block;
+  border: 2px solid brown;
+  border-radius: .5em;
+  padding: .5em 1em;
+
+  color: brown;
+  background: #eee;
+}
+
+label[for=dark-mode]:hover {
+  background: white;
+}
+
+label[for=dark-mode]:active {
+  color: papayawhip;
+  background-color: brown;
+}
