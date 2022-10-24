@@ -1,0 +1,8 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 50ch;
+  min-height: 100vh;
+}
