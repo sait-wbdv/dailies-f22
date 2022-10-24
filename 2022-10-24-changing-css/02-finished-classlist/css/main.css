@@ -3,9 +3,16 @@ body {
 
   font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
-  
+}
+
+body.light {
   color: brown;
   background-color: papayawhip;
+}
+
+body.dark {
+  color: papayawhip;
+  background-color: brown;
 }
 
 main {
@@ -17,4 +24,27 @@ main {
   margin: auto;
   max-width: 50ch;
   min-height: 100vh;
+}
+
+input {
+  display: none;
+}
+
+label {
+  display: block;
+  border: 2px solid brown;
+  border-radius: .5em;
+  padding: .5em 1em;
+
+  color: brown;
+  background: #eee;
+}
+
+label:hover {
+  background: white;
+}
+
+label:active {
+  color: papayawhip;
+  background-color: brown;
 }
