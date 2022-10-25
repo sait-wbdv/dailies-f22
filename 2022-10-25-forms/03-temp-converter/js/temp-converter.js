@@ -6,8 +6,6 @@ const tempConverter = function(event) {
   // Refactor to assign value from form field
   event.preventDefault();
 
-  // TODO: Check for empty `conversion` value
-
   const temp = form.temp.value;
   const conversion = form.conversion.value;
 
@@ -22,6 +20,8 @@ const tempConverter = function(event) {
 
     // Refactor to output response to paragraph element  
     output.innerHTML = `${temp} degrees Celsius is ${newTemp.toFixed(1)} degrees Fahrenheit!`;
+  } else {
+    output.innerHTML = `Invalid Conversion type. Please try again.`;
   }
 
 }
