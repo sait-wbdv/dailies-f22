@@ -1,0 +1,44 @@
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 32px;
+}
+
+section {
+  max-width: 50ch;
+  margin: auto;
+}
+
+fieldset {
+  margin-bottom: 1em;
+}
+
+fieldset > div {
+  display: flex;
+  margin: .25em;
+}
+
+label {
+  flex: 0 12ch;
+}
+
+input, select, textarea, button {
+  font-size: 32px;
+}
+
+input:required {
+  border: 2px solid red;
+}
+
+button {
+  padding: .25em 0.5em;
+  margin: auto;
+  display: block;
+}
+
+.required {
+  color: red;
+}
+
+.output {
+  color: brown;
+}
