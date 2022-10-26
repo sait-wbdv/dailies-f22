@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  font-size: 24px;
+}
+
+main {
+  max-width: 50ch;
+}
+
+label, textarea {
+  display: block;
+  margin: 1rem;
+}
+
+input, textarea {
+  font-size: 24px;
+}
