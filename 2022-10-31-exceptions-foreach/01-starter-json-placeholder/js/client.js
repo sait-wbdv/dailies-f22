@@ -12,4 +12,4 @@ const fetchData = async function(endpoint) {
                                               <p>${post.body}</p>`;
 }
 
-fetchData('https://jsonplaceolder.typicode.com/posts');
+fetchData('https://jsonplaceholder.typicode.com/posts');
