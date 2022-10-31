@@ -1,0 +1,8 @@
+article {
+  max-width: 40ch;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
