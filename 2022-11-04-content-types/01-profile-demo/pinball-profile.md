@@ -1,0 +1,44 @@
+# Pinball profile - Pinball Map
+## Single Types
+- Home page
+    - Fields:
+        - Title: Small Text
+        - Content: Rich Text
+- FAQ
+    - Fields:
+        - Title: Small Text
+        - Content: Rich Text
+        - Last Updated: Date
+
+## Collection Types
+- Blog posts
+    - Fields:
+        - Title: Small Text
+        - Excerpt: Large Text
+        - Content: Rich Text
+        - Post Date: Date
+        - Category: Relation - many-to-many
+        - Comments: Component - repeatable
+- Categories
+    - Fields:
+        - Name: Small Text
+        - Posts: Relation - many-to-many
+- Locations
+    - Fields:
+        - Name: Small Text
+        - Address: Component
+            - Suite Number: Small Text
+            - Street Name: Small Text
+            - Street Name 2: Small Text
+            - City: Small Text
+            - Province/State: Enumeration
+            - Postal/ZIP Code: Small Text
+        - Pinball Machines: Relation - many-to-many
+- Pinball Machines
+    - Fields:
+        - Name: Small Text
+        - Manufacturer: Enumeration
+            - Could be a relation?
+        - Date of Manufacture: Date (year)
+        - IPDB ID: Small Text
+        - Locations: Relation - many-to-many
